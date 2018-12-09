@@ -1,0 +1,944 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>crud6 documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">crud6 documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CursosComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/cursos/cursos.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cursos</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cursos.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cursos.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buscar">buscar</a>
+                            </li>
+                            <li>
+                                <a href="#cursos">cursos</a>
+                            </li>
+                            <li>
+                                <a href="#cursoToEdit">cursoToEdit</a>
+                            </li>
+                            <li>
+                                <a href="#editState">editState</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clearState">clearState</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCurso">deleteCurso</a>
+                            </li>
+                            <li>
+                                <a href="#editCurso">editCurso</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onUdpdateCurso">onUdpdateCurso</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cursoService: <a href="../injectables/CursoService.html">CursoService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/cursos/cursos.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cursoService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/CursoService.html" target="_self" >CursoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clearState"></a>
+                        <span class="name">
+                            <b>
+                            clearState
+                            </b>
+                            <a href="#clearState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>clearState()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/cursos/cursos.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteCurso"></a>
+                        <span class="name">
+                            <b>
+                            deleteCurso
+                            </b>
+                            <a href="#deleteCurso"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>deleteCurso(event, curso: <a href="../interfaces/CursoInterface.html">CursoInterface</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/cursos/cursos.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>curso</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editCurso"></a>
+                        <span class="name">
+                            <b>
+                            editCurso
+                            </b>
+                            <a href="#editCurso"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>editCurso(event, curso: <a href="../interfaces/CursoInterface.html">CursoInterface</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/cursos/cursos.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>curso</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/cursos/cursos.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onUdpdateCurso"></a>
+                        <span class="name">
+                            <b>
+                            onUdpdateCurso
+                            </b>
+                            <a href="#onUdpdateCurso"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onUdpdateCurso(curso: <a href="../interfaces/CursoInterface.html">CursoInterface</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/cursos/cursos.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>curso</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="buscar"></a>
+                        <span class="name">
+                            <b>
+                            buscar
+                            </b>
+                            <a href="#buscar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>buscar:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/cursos/cursos.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cursos"></a>
+                        <span class="name">
+                            <b>
+                            cursos
+                            </b>
+                            <a href="#cursos"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cursos:     <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/cursos/cursos.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cursoToEdit"></a>
+                        <span class="name">
+                            <b>
+                            cursoToEdit
+                            </b>
+                            <a href="#cursoToEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cursoToEdit:     <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/CursoInterface.html" target="_self" >CursoInterface</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/cursos/cursos.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editState"></a>
+                        <span class="name">
+                            <b>
+                            editState
+                            </b>
+                            <a href="#editState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>editState:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/cursos/cursos.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { CursoInterface } from &#x27;../../models/cursoInterface&#x27;;
+import { CursoService } from &#x27;../../services/curso.service&#x27;;
+
+@Component({
+  selector: &#x27;app-cursos&#x27;,
+  templateUrl: &#x27;./cursos.component.html&#x27;,
+  styleUrls: [&#x27;./cursos.component.css&#x27;]
+})
+export class CursosComponent implements OnInit {
+  cursos: CursoInterface[];
+  editState: boolean &#x3D; false;
+  cursoToEdit: CursoInterface;
+  buscar: string &#x3D; &quot;&quot;
+  constructor(private cursoService: CursoService) { }
+
+  ngOnInit() {
+    this.cursoService.getCursos().subscribe(cursos &#x3D;&gt; {
+      this.cursos &#x3D; cursos;
+    });
+  }
+  editCurso(event, curso: CursoInterface) {
+    this.editState &#x3D; true;
+    this.cursoToEdit &#x3D; curso;
+  }
+  onUdpdateCurso(curso: CursoInterface) {
+    this.cursoService.updateCurso(curso);
+    this.clearState();
+  }
+  deleteCurso(event, curso: CursoInterface) {
+    this.cursoService.deleteCurso(curso);
+    this.clearState();
+  }
+  clearState() {
+    this.editState &#x3D; false;
+    this.cursoToEdit &#x3D; null;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;cursos?.length &gt; 0;else noCursos&quot;&gt;
+  &lt;ul *ngFor&#x3D;&quot;let curso of cursos&quot; class&#x3D;&quot;collection&quot;&gt;
+    &lt;li class&#x3D;&quot;collection-item&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;secondary-content&quot;&gt;
+        &lt;i *ngIf&#x3D;&quot;editState &amp;&amp; cursoToEdit.id &#x3D;&#x3D; curso.id&quot; (click)&#x3D;&quot;clearState()&quot; class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;table  class&#x3D;&quot;table table-bordered table-striped tabla&quot; style&#x3D;&quot;margin-top:
+      40px;&quot;&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Nombre&lt;/td&gt;
+            &lt;td&gt;Descripcion&lt;/td&gt;
+            &lt;td&gt;Cantidad&lt;/td&gt;
+            &lt;td&gt;Precio&lt;/td&gt;
+            &lt;td&gt;Caracteristicas&lt;/td&gt;
+            &lt;td&gt;Seccion&lt;/td&gt;
+            &lt;td&gt;Editar&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;{{curso.nombre}}&lt;/td&gt;
+            &lt;td&gt;{{curso.descripcion}}&lt;/td&gt;
+            &lt;td&gt;{{curso.cantidad}}&lt;/td&gt;
+            &lt;td&gt;{{curso.precio}}&lt;/td&gt;
+            &lt;td&gt;{{curso.caracteristicas}}&lt;/td&gt;
+            &lt;td&gt;{{curso.seccion}}&lt;/td&gt;
+            &lt;td&gt;&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn waves-efect waves-light blue right&quot; *ngIf&#x3D;&quot;editState &#x3D;&#x3D; false&quot; (click)&#x3D;&quot;editCurso($event, curso)&quot;&gt;Editar&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;div *ngIf&#x3D;&quot;editState &amp;&amp; cursoToEdit.id &#x3D;&#x3D; curso.id&quot; class&#x3D;&quot;container-updateCurso&quot;&gt;
+        &lt;!-- TODO: form --&gt;
+        &lt;form (ngSubmit)&#x3D;&quot;onUdpdateCurso(curso)&quot; class&#x3D;&quot;col s6&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Nombre&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.nombre&quot; #nombre&#x3D;&quot;ngModel&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;nombre&quot; id&#x3D;&quot;nombre&quot; placeholder&#x3D;&quot;Nombre curso&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Descripcion&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.descripcion&quot; #descripcion&#x3D;&quot;ngModel&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;descripcion&quot; id&#x3D;&quot;descripcion&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Cantidad&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.cantidad&quot; #cantidad&#x3D;&quot;ngModel&quot; type&#x3D;&quot;number&quot; name&#x3D;&quot;cantidad&quot; id&#x3D;&quot;cantidad&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Precio&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.precio&quot; #precio&#x3D;&quot;ngModel&quot; type&#x3D;&quot;number&quot; name&#x3D;&quot;precio&quot; id&#x3D;&quot;precio&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Características&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.caracteristicas&quot; #caracteristicas&#x3D;&quot;ngModel&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;caracteristicas&quot; id&#x3D;&quot;caracteristicas&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;provinciacol s6&quot;&gt;
+              &lt;label&gt;Seccion&lt;/label&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;curso.seccion&quot; #seccion&#x3D;&quot;ngModel&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;seccion&quot; id&#x3D;&quot;seccion&quot;&gt;
+            &lt;/div&gt;
+            &lt;button (click)&#x3D;&quot;deleteCurso($event, curso)&quot; class&#x3D;&quot;btn red right&quot;&gt;Borrar
+              &lt;i class&#x3D;&quot;material-icons right&quot;&gt;delete_forever&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn orange&quot;&gt;Actualizar
+              &lt;i class&#x3D;&quot;material-icons right&quot;&gt;save&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;ng-template #noCursos&gt;
+  &lt;hr&gt;
+  &lt;h5&gt;NO EXISTEN PRODUCTOS&lt;/h5&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cursos.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.my_tag {
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 3px;
+  margin-left: 0;
+  text-align: center;
+  line-height: 22px;
+  color: #000;
+  box-sizing: border-box;
+  margin-right: 5px;
+  padding: 0.3rem;
+}
+
+.secondary-content {
+  color: #000;
+}
+
+#inicio{
+
+padding-right: 10px;
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="cursos?.length > 0;else noCursos">  <ul *ngFor="let curso of cursos" class="collection">    <li class="collection-item">      <a href="#" class="secondary-content">        <i *ngIf="editState && cursoToEdit.id == curso.id" (click)="clearState()" class="material-icons">close</i>      </a>      <table  class="table table-bordered table-striped tabla" style="margin-top:      40px;">          <tr>            <td>Nombre</td>            <td>Descripcion</td>            <td>Cantidad</td>            <td>Precio</td>            <td>Caracteristicas</td>            <td>Seccion</td>            <td>Editar</td>          </tr>          <tr>            <td>{{curso.nombre}}</td>            <td>{{curso.descripcion}}</td>            <td>{{curso.cantidad}}</td>            <td>{{curso.precio}}</td>            <td>{{curso.caracteristicas}}</td>            <td>{{curso.seccion}}</td>            <td><button type="submit" class="btn waves-efect waves-light blue right" *ngIf="editState == false" (click)="editCurso($event, curso)">Editar</button></td>          </tr>        </table>      <div *ngIf="editState && cursoToEdit.id == curso.id" class="container-updateCurso">        <!-- TODO: form -->        <form (ngSubmit)="onUdpdateCurso(curso)" class="col s6">          <div class="row">            <div class="provinciacol s6">              <label>Nombre</label>              <input [(ngModel)]="curso.nombre" #nombre="ngModel" type="text" name="nombre" id="nombre" placeholder="Nombre curso">            </div>            <div class="provinciacol s6">              <label>Descripcion</label>              <input [(ngModel)]="curso.descripcion" #descripcion="ngModel" type="text" name="descripcion" id="descripcion">            </div>            <div class="provinciacol s6">              <label>Cantidad</label>              <input [(ngModel)]="curso.cantidad" #cantidad="ngModel" type="number" name="cantidad" id="cantidad">            </div>            <div class="provinciacol s6">              <label>Precio</label>              <input [(ngModel)]="curso.precio" #precio="ngModel" type="number" name="precio" id="precio">            </div>            <div class="provinciacol s6">              <label>Características</label>              <input [(ngModel)]="curso.caracteristicas" #caracteristicas="ngModel" type="text" name="caracteristicas" id="caracteristicas">            </div>            <div class="provinciacol s6">              <label>Seccion</label>              <input [(ngModel)]="curso.seccion" #seccion="ngModel" type="text" name="seccion" id="seccion">            </div>            <button (click)="deleteCurso($event, curso)" class="btn red right">Borrar              <i class="material-icons right">delete_forever</i>            </button>            <button type="submit" class="btn orange">Actualizar              <i class="material-icons right">save</i>            </button>          </div>        </form>      </div>    </li>  </ul></div><ng-template #noCursos>  <hr>  <h5>NO EXISTEN PRODUCTOS</h5></ng-template></div>'
+    var COMPONENTS = [{'name': 'AddCursoComponent', 'selector': 'app-add-curso'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CursosComponent', 'selector': 'app-cursos'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'InisesComponent', 'selector': 'app-inises'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'RegistroComponent', 'selector': 'app-registro'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CursosComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CursosComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
