@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">Nuevo Producto</span>
+    <form (ngSubmit)="onGuardarCurso(formNew)" #formNew="ngForm" class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.nombre" #nombre="ngModel" type="text" name="nombre" id="nombre">
+          <label>Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.descripcion" #descripcion="ngModel" type="text" name="descripcion" id="descripcion">
+          <label>Descripcion</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.cantidad" #cantidad="ngModel" type="number" name="cantidad" id="cantidad">
+          <label>Cantidad</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.precio" #precio="ngModel" type="number" name="precio" id="precio">
+          <label>Precio</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.caracteristicas" #caracteristicas="ngModel" type="text" name="caracteristicas" id="caracteristicas">
+          <label>Características</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="curso.seccion" #seccion="ngModel" type="text" name="seccion" id="seccion"
+          pattern="Tablets/Ebooks|Electrodomesticos|Componentes|Periféricos|Televisores|Smartphone|PC" required>
+          <label>Seccion</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light orange right">Guardar </button>
+      </div>
+    </form>
+  </div>
+</div>

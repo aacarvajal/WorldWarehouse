@@ -1,0 +1,72 @@
+<div *ngIf="cursos?.length > 0;else noCursos">
+  <ul *ngFor="let curso of cursos" class="collection">
+    <li class="collection-item">
+      <a href="#" class="secondary-content">
+        <i *ngIf="editState && cursoToEdit.id == curso.id" (click)="clearState()" class="material-icons">close</i>
+      </a>
+      <table  class="table table-bordered table-striped tabla" style="margin-top:
+      40px;">
+          <tr>
+            <td>Nombre</td>
+            <td>Descripcion</td>
+            <td>Cantidad</td>
+            <td>Precio</td>
+            <td>Caracteristicas</td>
+            <td>Seccion</td>
+            <td>Editar</td>
+          </tr>
+          <tr>
+            <td>{{curso.nombre}}</td>
+            <td>{{curso.descripcion}}</td>
+            <td>{{curso.cantidad}}</td>
+            <td>{{curso.precio}}</td>
+            <td>{{curso.caracteristicas}}</td>
+            <td>{{curso.seccion}}</td>
+            <td><button type="submit" class="btn waves-efect waves-light blue right" *ngIf="editState == false" (click)="editCurso($event, curso)">Editar</button></td>
+          </tr>
+        </table>
+      <div *ngIf="editState && cursoToEdit.id == curso.id" class="container-updateCurso">
+        <!-- TODO: form -->
+        <form (ngSubmit)="onUdpdateCurso(curso)" class="col s6">
+          <div class="row">
+            <div class="provinciacol s6">
+              <label>Nombre</label>
+              <input [(ngModel)]="curso.nombre" #nombre="ngModel" type="text" name="nombre" id="nombre" placeholder="Nombre curso">
+            </div>
+            <div class="provinciacol s6">
+              <label>Descripcion</label>
+              <input [(ngModel)]="curso.descripcion" #descripcion="ngModel" type="text" name="descripcion" id="descripcion">
+            </div>
+            <div class="provinciacol s6">
+              <label>Cantidad</label>
+              <input [(ngModel)]="curso.cantidad" #cantidad="ngModel" type="number" name="cantidad" id="cantidad">
+            </div>
+            <div class="provinciacol s6">
+              <label>Precio</label>
+              <input [(ngModel)]="curso.precio" #precio="ngModel" type="number" name="precio" id="precio">
+            </div>
+            <div class="provinciacol s6">
+              <label>Características</label>
+              <input [(ngModel)]="curso.caracteristicas" #caracteristicas="ngModel" type="text" name="caracteristicas" id="caracteristicas">
+            </div>
+            <div class="provinciacol s6">
+              <label>Seccion</label>
+              <input [(ngModel)]="curso.seccion" #seccion="ngModel" type="text" name="seccion" id="seccion">
+            </div>
+            <button (click)="deleteCurso($event, curso)" class="btn red right">Borrar
+              <i class="material-icons right">delete_forever</i>
+            </button>
+            <button type="submit" class="btn orange">Actualizar
+              <i class="material-icons right">save</i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </li>
+  </ul>
+</div>
+<ng-template #noCursos>
+  <hr>
+  <h5>NO EXISTEN PRODUCTOS</h5>
+</ng-template>

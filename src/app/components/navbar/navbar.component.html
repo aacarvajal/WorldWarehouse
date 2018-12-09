@@ -1,0 +1,20 @@
+<nav>
+  <a href="#" class="brand-logo">World Warehouse</a>
+  <div class="collapse navbar-collapse right" id="containerNavbar">
+    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" routerLink="/">Inicio </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/inises" *ngIf="!isLogged">Iniciar sesión </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/registro" *ngIf="!isLogged">Registrarse</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <button type="submit" class="btn btn-danger btn-block" (click)="onLogout()" *ngIf="isLogged"> Cerrar sesion
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
